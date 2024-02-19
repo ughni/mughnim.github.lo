@@ -1,0 +1,85 @@
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @font-face {
+            font-family: judul;
+            src: url(/FONT/ProtestRevolution-Regular.ttf)
+            format(truetype);
+        }
+
+        .login-container {
+            background-color: #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            border-radius: 8px;
+            width: 550px;
+            text-align: center;
+        }
+
+        .login-container img {
+            width: 200px;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-family: judul;
+            font-size: calc(2vw + 1em);
+            color: #4A00E0;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: judul;
+            font-size: 17px;
+            transition: background 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background: linear-gradient(to right, #8E2DE2, #4A00E0);
+        }
+
+        .login-form p {
+            color: #666;
+            margin-top: 15px;
+        }
+
+
+        @media  screen and (max-width:789px) {
+            .login-container {
+                width: 400px;
+            }
+        }
+
+        @media  screen and (max-width:560px) {
+            .login-container {
+                width: 300px;
+            }
+            .login-container img {
+                width: 100px;
+            }
+        }
